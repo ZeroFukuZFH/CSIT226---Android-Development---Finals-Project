@@ -7,6 +7,7 @@ import android.util.Log
 import android.widget.LinearLayout
 
 class FooterLayout : Activity() {
+    // TODO : FIX ROUTES NOT WORKING !!!
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_footer)
@@ -23,20 +24,20 @@ class FooterLayout : Activity() {
         }
 
         linearLayoutCafesActivity.setOnClickListener {
-            val dashboardActivity = Intent(this,DashboardActivity::class.java)
-            startActivity(dashboardActivity)
+            val cafesActivity = Intent(this,CafesActivity::class.java)
+            startActivity(cafesActivity)
             Log.e("CAFES_BUTTON","Cafes Button has been Pressed")
         }
 
         linearLayoutSocialActivity.setOnClickListener {
-            val dashboardActivity = Intent(this,DashboardActivity::class.java)
-            startActivity(dashboardActivity)
+            val socialActivity = Intent(this,SocialActivity::class.java)
+            startActivity(socialActivity)
             Log.e("SOCIAL_BUTTON","Social Button has been Pressed")
         }
 
         linearLayoutProfileActivity.setOnClickListener {
-            val dashboardActivity = Intent(this,DashboardActivity::class.java)
-            startActivity(dashboardActivity)
+            val profileActivity = Intent(this,ProfileActivity::class.java)
+            startActivity(profileActivity)
             Log.e("PROFILE_BUTTON","Profile Button has been Pressed")
         }
     }
