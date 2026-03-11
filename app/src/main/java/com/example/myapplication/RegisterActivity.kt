@@ -22,7 +22,8 @@ class RegisterActivity : Activity() {
         // AUTH
         buttonRegister.setOnClickListener {
             // TODO : POST TO DATABASE
-
+            val dashboardActivity = Intent(this,DashboardActivity::class.java)
+            startActivity(dashboardActivity)
             // TODO : AUTHENTICATE
         }
 

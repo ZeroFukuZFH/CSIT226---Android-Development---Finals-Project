@@ -19,7 +19,8 @@ class LoginActivity : Activity() {
         // AUTHENTICATION
         buttonLogin.setOnClickListener {
             // TODO : AUTHENTICATE
-
+            val dashboardActivity = Intent(this,DashboardActivity::class.java)
+            startActivity(dashboardActivity)
         }
 
         // ROUTING
